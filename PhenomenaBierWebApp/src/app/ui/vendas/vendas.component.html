@@ -1,0 +1,23 @@
+
+<!--data tablexS-->
+          <table class="table table-bordered table-sm table-striped table-dark text-center">
+            <thead>
+              <tr>
+                  <th scope="col"><span class="badge badge-secondary text-center">{{vendasMes}} {{this.totalVendas}}</span></th>
+                  <th></th>
+                  <th scope="col"><span class="badge badge-secondary text-center"><i class="fa fa-plus"></i></span></th>
+                </tr>
+              <tr>
+                <th scope="col">Tipo</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Vededor</th>
+                </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let venda of this.vendas">
+              <td>{{venda.Tipo}}</td>
+              <td>{{venda.Quantidade}}</td>
+              <td>{{venda.Vendedor}}</td>
+            </tr>
+          </tbody>
+          </table>

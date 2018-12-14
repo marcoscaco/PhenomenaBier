@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~font-awesome/css/font-awesome.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+@font-face {
+  font-family: "Friday13";
+  src: url('/./src/assets/font/friday13v12-webfont.woff') format('woff');
+}
+.Friday13{
+  font-family: "Friday13";
+}
+
+@font-face {
+  font-family: "DKSpaghettiAndCheese";
+  src: url('/./src/assets/font/DKSpaghettiAndCheese.otf');
+}
+.DKSpaghettiAndCheese{
+  font-family: "DKSpaghettiAndCheese";
+  letter-spacing: 3px;
+}
+.card{
+  background-color: rgba(39, 37, 37, 0.342) !important;
+  margin-top: 135px;
+}
+
+.table{
+  background-color: rgba(49, 49, 49, 0.59) !important;
+  
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'DKSpaghettiAndCheese'; }
+
+body{
+  background-color: black!important;
+  background-image: url("../src/assets/et.png");
+  background-position: right;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 200px 180px;
+  background-attachment: fixed;
+}
