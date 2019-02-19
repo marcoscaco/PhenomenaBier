@@ -1,0 +1,25 @@
+<div class="card text-center">
+  	<div class="card-body">
+    	<h5 class="card-title Friday13">Loggin</h5>
+    	<div class="btn-group-vertical">
+			<button class="btn btn-outline-light mb-2 mr-2"(click)="authService.loginWithGoogle()">
+				<i class="fab fa-google" style="margin: 15px;"></i>
+				Login With Google
+			</button>
+			<button class="btn btn-outline-light mb-2 mt-2" type="button" data-toggle="collapse" data-target="#showEmailLogin" aria-expanded="false" aria-controls="showEmailLogin">
+				<i class="fas fa-envelope" style="margin: 15px;"></i>
+				Login With Email
+			</button>
+		</div>
+	</div>
+	<div class="card-footer">
+		<div class="collapse" id="showEmailLogin">
+			<input type="text" class="form-control mb-2" placeholder="Email" #userEmail required autofocus>
+			<input type="password" class="form-control mb-2" placeholder="Password" #userPassword required>
+	  		<button class="btn btn-outline-light"  (click)="authService.login(userEmail.value, userPassword.value)">
+				Login
+			</button>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>

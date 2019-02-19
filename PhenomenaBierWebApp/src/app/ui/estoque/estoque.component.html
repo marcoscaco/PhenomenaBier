@@ -1,46 +1,74 @@
-<div class="card text-white bg-dark text-center DKSpaghettiAndCheese" >
+
+<div class="card text-center DKSpaghettiAndCheese" >
         <div class="card-body" >
             <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group btn-group-toggle" role="group" aria-label="First group">
-                    <button class="btn mx-5 btn-outline-light active" type="button" aria-pressed="true" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="AbaBrejas AbaConsumiveis">Brejas</button>
+                    <button class="btn mx-5 btn-outline-light" type="button" aria-pressed="true" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="AbaBrejas AbaConsumiveis">Brejas</button>
                     <button class="btn mx-5 btn-outline-light" type="button" aria-pressed="false" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="AbaBrejas AbaConsumiveis">Consumiveis</button>
                 </div>
             </div>
 
             <div class="collapse show multi-collapse" id="AbaBrejas">
+                <button class="btn btn-outline-light btn-float" type="button" aria-pressed="false" data-toggle="" data-target="" aria-expanded="" aria-controls="">+</button>
                 <table class="table table-striped table-dark text-center">
                     <thead >
                         <tr>
                         <th scope="col">Tipo</th>
-                        <th scope="col">Em estoque</th>
+                        <th scope="col">Disponivel</th>
+                        <th scope="col">Em produção</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let breja of this.items">
-                        <td *ngIf="breja.tipo == 'Cerveja'" >{{breja.nome}}</td>
-                        <td *ngIf="breja.tipo == 'Cerveja'">{{breja.quantidade}}  {{breja.grandeza}}</td>
+                        <tr *ngFor="let item of itemsCervejas | async">
+                        <td>{{item.name}}</td>
+                        <td>{{item.amount}}</td>
+                        <td>{{item.waiting}}</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="collapse multi-collapse" id="AbaConsumiveis">
-              <table class="table table-striped table-dark text-center">
+                <button class="btn btn-outline-light btn-float" type="button" aria-pressed="false" data-toggle="" data-target="" aria-expanded="" aria-controls="">+</button>
+                <table class="table table-striped table-dark text-center">
                     <thead >
                         <tr>
-                        <th scope="col">Tipo</th>
+                        <th scope="col"></th>
+                        <th class="d-none d-sm-table-cell" scope="col">Tipo</th>
+                        <th class="d-none d-md-table-cell" scope="col">Em estoque</th>
                         <th scope="col">Detalhes</th>
-                        <th scope="col">Em estoque</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let item of this.items">
-                        <td  *ngIf="item.tipo != 'Cerveja'">{{item.tipo}}</td>
-                        <td  *ngIf="item.tipo != 'Cerveja'">{{item.nome}}</td>
-                        <td  *ngIf="item.tipo != 'Cerveja'">{{item.quantidade}}  {{item.grandeza}}</td>
+                        <tr *ngFor="let item of itemsConsumiveis | async">
+                        <td>{{item.name}}</td>
+                        <td class="d-none d-sm-table-cell">{{item.type}}</td>
+                        <td class="d-none d-md-table-cell">{{item.quantity}}</td>
+                        <td>
+                            <button type="button" class="btn btn-small btn-outline-light" data-toggle="modal" [attr.data-target]="'#' + item.name">
+                            <i class="d-lg-block fa fa-info" aria-hidden="true"></i>
+                            </button>
+                            <div class="modal fade" id="{{item.name}}" tabindex="-1" role="dialog" [attr.aria-labelledby]="item.name" aria-hidden="true">
+							                <div class="modal-dialog" role="document">
+									              <div class="modal-content">
+										              <div class="modal-header">
+                                    {{item.name}}
+                                  </div>
+										              <div class="modal-body">
+										                {{item.details}}
+										              </div>
+                                  <div class="modal-footer">
+                                    Disponivel: {{item.quantity}}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
 </div>
+
+
 

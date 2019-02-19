@@ -1,32 +1,17 @@
 .headImg{
   height: 50px;
   width: 25;
-  margin-right: 5%;
 }
 
 .PhenomenaHead{
-  color: green !important;
+  color: rgb(95, 255, 47) !important;
   letter-spacing: 2px;
+  font-family: "Friday13";
 }
 
 
 .img-thumbnail{background-color:transparent}
 
-.fa-flask:hover{
-  color: rebeccapurple;
-}
-.fa-flask{
-  color: rgb(131, 1, 66);
-}
-.fa-book{
-  color:  orange;
-}
-.fa-barcode:hover{
-  color: darkgoldenrod;
-}
-.fa-money{
-  color: gold;
-}
-.fa-home{
-  color: green;
+.active{
+  color: rgb(95, 255, 47) !important;
 }

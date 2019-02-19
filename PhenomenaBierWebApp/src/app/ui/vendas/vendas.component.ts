@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { FirebaseService } from '../../db/firebase.service';
 
 @Component({
   selector: 'app-vendas',
@@ -6,73 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vendas.component.css']
 })
 export class VendasComponent {
-  vendasOPs = [ 'Blonde', 'RED', 'Golden', 'Stoult', 'IPA', 'Lemon', 'Lager', 'Weiss', 'Wit', 'Tripel'
-  ];
-
-  vendasOn: true;
-  totalMinhas = 5;
-  vendasMes = 'Outubro';
-  totalVendas = 100;
-  vendas = [
-    {
-      Number: '1',
-      Quantidade: '50',
-      Tipo: 'IPA',
-      Vendedor: 'Sam'
-    },
-    {
-      Number: '2',
-      Quantidade: '2',
-      Tipo: 'Golden',
-      Vendedor: 'Baranga'
-    },
-    {
-      Number: '2',
-      Quantidade: '2',
-      Tipo: 'Golden',
-      Vendedor: 'Baranga'
-    },
-    {
-      Number: '2',
-      Quantidade: '2',
-      Tipo: 'Golden',
-      Vendedor: 'Baranga'
-    },
-    {
-      Number: '2',
-      Quantidade: '2',
-      Tipo: 'Golden',
-      Vendedor: 'Baranga'
-    },
-    {
-      Number: '2',
-      Quantidade: '2',
-      Tipo: 'Golden',
-      Vendedor: 'Baranga'
-    },
-    {
-      Number: '2',
-      Quantidade: '2',
-      Tipo: 'Golden',
-      Vendedor: 'Baranga'
-    },
-    {
-      Number: '2',
-      Quantidade: '2',
-      Tipo: 'Golden',
-      Vendedor: 'Baranga'
-    },
-    {
-      Number: '2',
-      Quantidade: '2',
-      Tipo: 'Golden',
-      Vendedor: 'Baranga'
-    }
-  ];
-  constructor() {
-    console.log(this.vendasOn);
-    this.totalMinhas = 50;
-    this.totalVendas = 100;
+  items: Observable<any[]>;
+  vendas: Observable<any[]>;
+  select: Observable<any[]>;
+  seller: string;
+  sliderValue = 1;
+  op: string;
+  constructor(private _FBS: FirebaseService) {
+  this.items = _FBS.getPath('estoque');
+  this.seller = 'Santiago';
+  this.vendas = _FBS.getPath('vendas');
+  this.op = '';
   }
-
+  selectBreja(e) {
+    this.sliderValue = 1;
+    this.op = e;
+  }
+  selectValue(e) {
+    this.sliderValue = e;
+  }
 }
+

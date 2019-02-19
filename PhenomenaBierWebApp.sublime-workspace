@@ -1,0 +1,473 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"na",
+				"nav-link"
+			],
+			[
+				"n",
+				"nav-item"
+			],
+			[
+				"mo",
+				"modal-header"
+			],
+			[
+				"s",
+				"sliderValue\tproperty"
+			],
+			[
+				"ite",
+				"item"
+			],
+			[
+				"ng-f",
+				"ng-form\tAngularJS"
+			],
+			[
+				"venda",
+				"vendas"
+			],
+			[
+				"mar",
+				"margin\tproperty"
+			],
+			[
+				"_",
+				"_FBS\tparameter"
+			],
+			[
+				"con",
+				"console\tvar"
+			],
+			[
+				"get",
+				"getPath\tmethod"
+			],
+			[
+				"ob",
+				"Observable\talias"
+			],
+			[
+				"a",
+				"auth.service.service\tscript"
+			],
+			[
+				"im",
+				"import\timports a module …"
+			],
+			[
+				"Fi",
+				"FirebaseService\talias"
+			],
+			[
+				"impo",
+				"import\tkeyword"
+			],
+			[
+				"Angu",
+				"AngularFirestoreCollection\talias"
+			],
+			[
+				"Ang",
+				"AngularFirestoreCollection\talias"
+			],
+			[
+				"es",
+				"estoque\tlocal var"
+			],
+			[
+				"O",
+				"Observable\talias"
+			],
+			[
+				"pr",
+				"private\tkeyword"
+			],
+			[
+				"An",
+				"AngularFirestoreCollection\tclass"
+			],
+			[
+				"ven",
+				"vendas"
+			],
+			[
+				"t",
+				"td\tTag"
+			],
+			[
+				"c",
+				"col"
+			],
+			[
+				"d",
+				"db\tdirectory"
+			],
+			[
+				"f",
+				"firebase.service\tscript"
+			],
+			[
+				"A",
+				"AngularFireModule\talias"
+			],
+			[
+				"R",
+				"Router\talias"
+			],
+			[
+				"marg",
+				"margin-top\tproperty"
+			],
+			[
+				"ca",
+				"card-body"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"ma",
+				"margin\tproperty"
+			],
+			[
+				"ret",
+				"return\tkeyword"
+			],
+			[
+				"nf",
+				"ng-if\tAngularJS"
+			],
+			[
+				"re",
+				"return\tkeyword"
+			],
+			[
+				"Lo",
+				"LoginComponent\talias"
+			],
+			[
+				"fr",
+				"from\tkeyword"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "ENCORE - BTG pactual - Projeto Titans\n\t\n\tInvestigação de Ativos\n\n\tTecnologias:\n\t\tFront\n\t\tAngular\n\t\t\tbootstrap\n\t\t\tnebular\n\t\t\tExibiçao do datalake completo\n\t\tuat-titans.enforcegroup.com.br\n\t\t\t\n\t\tBack\n\t\t\tPython\n\t\t\tJango\n\t\t\ttratar o datalake\n\n\tOrganizado via\n\n#Sprint 05/02/18 --> 19/02/18\n\t\n\t#Solicitaçoes: table com solicitaçoes m andamento\n\tCampos de parecer: input para o Investigador relatar --> popup\n\t\t--> deverá ir para o dosseie\n\tpermitir ediçao de campos:\n\t \tpoder editar os campos faltantes\n\t \t\t:fonte +  *\n\t \t\t: \n\t \t\t--> ag grid\n\t#Geral: log do caso\n\t\t\tgeo loc dos patrimonios -->\n\n\n\t",
+			"file": "/home/caco/Área de trabalho/ENCORE - BTG pactual",
+			"file_size": 151,
+			"file_write_time": 131938550175000014,
+			"settings":
+			{
+				"buffer_size": 592,
+				"line_ending": "Unix",
+				"name": "ENCORE - BTG pactual"
+			}
+		},
+		{
+			"file": "PhenomenaBierWebApp/src/app/ui/ui.module.ts",
+			"settings":
+			{
+				"buffer_size": 1694,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/login",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/producao",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/vendas"
+	],
+	"file_history":
+	[
+		"/etc/apf.conf",
+		"/home/caco/Área de trabalho/exercicio_galoa/ExercicioCN/src/index.html",
+		"/home/caco/Área de trabalho/exercicio_galoa/ExercicioCN.html",
+		"/home/caco/Área de trabalho/exercicio_galoa/bundle-bundle_schedule_defer.js",
+		"/home/caco/Área de trabalho/exercicio_galoa/bundle-bundle_schedule_head.css",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/vendas/vendas.component.html",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/db/firebase.service.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/vendas/vendas.component.ts",
+		"/home/caco/%F",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/estoque/estoque.component.html",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/vendas/vendas.component.css",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/home/home.component.html",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/auth/auth.service.service.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/tsconfig.app.json",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/main.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/environments/environment.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/environments/environment.prod.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/environments/environment.hmr.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/angular.json",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/tsconfig.json",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/package.json",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/hmr.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/styles.css",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/header/header.component.html",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/footer/footer.component.html",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/login/login.component.html",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/ui.module.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/app.component.html",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/layout/layout.component.html",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/header/header.component.css",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/layout/layout.component.css",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/app.module.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/producao/producao.component.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/estoque/estoque.component.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/producao/producao.component.html",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/auth/authguard.guard.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/home/home.component.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/header/header.component.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/app/ui/login/login.component.ts",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/src/index.html",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/node_modules/@fortawesome/fontawesome-free/package.json",
+		"/home/caco/Phenomena/PhenomenaBier/PhenomenaBierWebApp/package-lock.json",
+		"/home/caco/.config/sublime-text-3/Packages/User/AngularJS-sublime-package.sublime-settings"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/caco/Área de trabalho/ENCORE - BTG pactual",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 592,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								592,
+								592
+							]
+						],
+						"settings":
+						{
+							"auto_name": "ENCORE - BTG pactual",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "PhenomenaBierWebApp/src/app/ui/ui.module.ts",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 29.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "PhenomenaBierWebApp.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

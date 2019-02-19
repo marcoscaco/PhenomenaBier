@@ -11,8 +11,9 @@ export class HomeComponent implements OnInit {
     {text: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'}
   ];
 
-  constructor() { }
 
+  constructor() {}
+  
   ngOnInit() {
   }
 

@@ -4,20 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {RouterModule, Routes} from '@angular/router';
-import { VendasComponent } from './ui/vendas/vendas.component';
-import { HomeComponent } from './ui/home/home.component';
-import { CaixaComponent } from './ui/caixa/caixa.component';
-import { EstoqueComponent } from './ui/estoque/estoque.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
-const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'vendas', component: VendasComponent },
-  { path: 'estoque', component: EstoqueComponent },
-  {path: 'caixa', component: CaixaComponent}
-];
+import { environment } from '../environments/environment';
+
+
+
+// firebase
+import {AngularFireModule} from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { FirebaseService } from './db/firebase.service';
+import { AuthService } from './auth/auth.service.service';
 
 @NgModule({
   declarations: [
@@ -27,10 +25,13 @@ const appRoutes: Routes = [
     BrowserModule,
     UiModule,
     BrowserAnimationsModule,
-    NgbModule,
-    RouterModule.forRoot(appRoutes)
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule.enablePersistence(),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    NgbModule
   ],
-  providers: [],
+  providers: [FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

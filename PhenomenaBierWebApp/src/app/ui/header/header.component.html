@@ -1,13 +1,22 @@
-<nav class="navbar fixed-top navbar-dark bg-dark" style="background-color: rgba(39, 37, 37, 0.342) !important;">
-  <a class="navbar-brand Friday13 PhenomenaHead font-italic " href="/"><img src="../../../assets/et.png" alt="Cinque Terre" class="img-thumbnail rounded headImg">Phenomena</a>
-  <a class="navbar-brand Friday13 PhenomenaHead font-italic " style="color: orange !important;" href="/">Bier</a>
+<nav class="navbar fixed-top navbar-dark">
+  <a class="navbar-brand PhenomenaHead font-italic " >
+    <img src="../../../assets/et.png" alt="Cinque Terre" class="img-thumbnail rounded headImg" routerLink="home" >
+      Phenomena
+      <a class="PhenomenaHead font-italic " style="color: orange !important;" routerLink="home" >
+        Bier
+      </a>
+    </a>
   <div class="navbar-expand mr-auto">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active DKSpaghettiAndCheese" href="home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-      <a class="nav-item nav-link DKSpaghettiAndCheese" href="vendas"><i class="fa fa-barcode" aria-hidden="true" S></i> Venda</a>
-      <a class="nav-item nav-link DKSpaghettiAndCheese" href="caixa"><i class="fa fa-money"></i> Caixa</a>
-      <a class="nav-item nav-link DKSpaghettiAndCheese" href="#"><i class="fa fa-flask" aria-hidden="true"></i> Produção</a>
-      <a class="nav-item nav-link DKSpaghettiAndCheese" href="estoque"><i class="fa fa-book" aria-hidden="true"></i> Estoque</a>
+      <a *ngIf="authService.isLoggedIn" class="nav-item nav-link DKSpaghettiAndCheese" routerLink="home" [routerLinkActive]="'active'"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      <a *ngIf="authService.isLoggedIn" class="nav-item nav-link DKSpaghettiAndCheese" routerLink="vendas" [routerLinkActive]="'active'"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Venda</a>
+      <a *ngIf="authService.isLoggedIn" class="nav-item nav-link DKSpaghettiAndCheese" routerLink="caixa" [routerLinkActive]="'active'" ><i class="fas fa-cash-register"></i> Caixa</a>
+      <a *ngIf="authService.isLoggedIn" class="nav-item nav-link DKSpaghettiAndCheese" routerLink="procucao" [routerLinkActive]="'active'"><i class="fa fa-flask" aria-hidden="true"></i> Produção</a>
+      <a *ngIf="authService.isLoggedIn" class="nav-item nav-link DKSpaghettiAndCheese" routerLink="estoque" [routerLinkActive]="'active'"><i class="fa fa-book" aria-hidden="true"></i> Estoque</a>
+      <a class="nav-item nav-link DKSpaghettiAndCheese ml-auto" *ngIf="authService.isLoggedIn" (click)="authService.logout()">
+        <i class="fas fa-sign-out-alt"></i>
+        Logout
+      </a>
     </div>
   </div>
 </nav>

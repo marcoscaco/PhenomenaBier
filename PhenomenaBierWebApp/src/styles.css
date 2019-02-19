@@ -1,12 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~font-awesome/css/font-awesome.css";
+@import '@fortawesome/fontawesome-free/css/all.css';
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 
 @font-face {
   font-family: "Friday13";
-  src: url('/./src/assets/font/friday13v12-webfont.woff') format('woff');
+  src: url('./assets/font/Friday13v12.eot'); /* IE9 Compat Modes */
+  src: url('./assets/font/Friday13v12.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/font/Friday13v12.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/font/Friday13v12.woff') format('font-woff'), /* Pretty Modern Browsers */
+       url('./assets/font/Friday13v12.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./assets/font/Friday13v12.svg#Friday13') format('svg'); /* Legacy iOS */
 }
 .Friday13{
   font-family: "Friday13";
@@ -14,30 +19,66 @@
 
 @font-face {
   font-family: "DKSpaghettiAndCheese";
-  src: url('/./src/assets/font/DKSpaghettiAndCheese.otf');
+  src: url('./assets/font/DKSpaghettiAndCheese.eot'); /* IE9 Compat Modes */
+  src: url('./assets/font/DKSpaghettiAndCheese.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/font/DKSpaghettiAndCheese.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/font/DKSpaghettiAndCheese.woff') format('font-woff'), /* Pretty Modern Browsers */
+       url('./assets/font/DKSpaghettiAndCheese.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./assets/font/DKSpaghettiAndCheese.svg#DKSpaghettiAndCheese') format('svg'); /* Legacy iOS */
 }
 .DKSpaghettiAndCheese{
   font-family: "DKSpaghettiAndCheese";
   letter-spacing: 3px;
 }
 .card{
-  background-color: rgba(39, 37, 37, 0.342) !important;
-  margin-top: 135px;
+  background-color: rgba(49, 49, 49, 0.45) !important;
+  color: white !important;
 }
 
 .table{
-  background-color: rgba(49, 49, 49, 0.59) !important;
-  
+  background-color: rgba(49, 49, 49, 0.45) !important;
+  color: white !important;
+  margin-top: 10px;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'DKSpaghettiAndCheese'; }
+.navbar{
+  background-color: rgba(39, 37, 37, 1) !important;
+}
+
+.modal{
+  padding-top: 135px;
+  color: white !important;
+  background-color: rgba(39, 37, 37, 0.95) !important;
+}
+.modal-header{
+  background-color: rgba(39, 37, 37, 0.95) !important;
+}
+.modal-body{
+  background-color: rgba(39, 37, 37, 0.95) !important;
+}
+.modal-footer{
+  background-color: rgba(39, 37, 37, 0.95) !important;
+}
 
 body{
+  font-family: 'DKSpaghettiAndCheese';
   background-color: black!important;
   background-image: url("../src/assets/et.png");
   background-position: right;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: 200px 180px;
   background-attachment: fixed;
+  padding-top: 135px;
+}
+
+.btn-float{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:40px;
+	right:40px;
+	/*background-color:green;*/
+	color:#FFF;
+	border-radius:150px !important;
+	text-align:center;
 }
