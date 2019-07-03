@@ -12,6 +12,8 @@ import { ProducaoComponent } from './producao/producao.component';
 import { LoginComponent } from './login/login.component';
 
 import { AuthGuard } from '../auth/authguard.guard';
+import { CadastroDeClientesComponent } from './cadastro-de-clientes/cadastro-de-clientes.component';
+import { ModalAlertComponent } from './modal-alert/modal-alert.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AuthGuard] },
@@ -20,6 +22,7 @@ const appRoutes: Routes = [
   { path: 'estoque', component: EstoqueComponent, canActivate: [AuthGuard]  },
   { path: 'caixa', component: CaixaComponent, canActivate: [AuthGuard] },
   { path: 'procucao', component: ProducaoComponent, canActivate: [AuthGuard] },
+  { path: 'novoCliente', component: CadastroDeClientesComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent}
 ];
 
@@ -38,7 +41,9 @@ const appRoutes: Routes = [
     FooterComponent,
     ProducaoComponent,
     CaixaComponent,
-    LoginComponent
+    LoginComponent,
+    CadastroDeClientesComponent,
+    ModalAlertComponent
   ],
   exports: [HeaderComponent, LayoutComponent, VendasComponent, HomeComponent, EstoqueComponent]
 })

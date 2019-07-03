@@ -13,6 +13,7 @@
       <a *ngIf="authService.isLoggedIn" class="nav-item nav-link DKSpaghettiAndCheese" routerLink="caixa" [routerLinkActive]="'active'" ><i class="fas fa-cash-register"></i> Caixa</a>
       <a *ngIf="authService.isLoggedIn" class="nav-item nav-link DKSpaghettiAndCheese" routerLink="procucao" [routerLinkActive]="'active'"><i class="fa fa-flask" aria-hidden="true"></i> Produção</a>
       <a *ngIf="authService.isLoggedIn" class="nav-item nav-link DKSpaghettiAndCheese" routerLink="estoque" [routerLinkActive]="'active'"><i class="fa fa-book" aria-hidden="true"></i> Estoque</a>
+      <a *ngIf="authService.isLoggedIn" class="nav-item nav-link DKSpaghettiAndCheese" routerLink="novoCliente" [routerLinkActive]="'active'"><i class="fa fa-book" aria-hidden="true"></i> Novo Cliente</a>
       <a class="nav-item nav-link DKSpaghettiAndCheese ml-auto" *ngIf="authService.isLoggedIn" (click)="authService.logout()">
         <i class="fas fa-sign-out-alt"></i>
         Logout
